@@ -138,5 +138,6 @@ body{
     }
     body{
         position: fixed;
+        left: 50% 50%;
     }
 }
