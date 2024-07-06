@@ -8,11 +8,8 @@
     <title>55</title>
 </head>
 <body>
+
     <div class="boxS">
-        <div>
-            <button onclick="saveToFile()">Save to File</button>
-            <input type="file" id="fileInput" onchange="loadFromFile()">
-        </div>
         <div class="box">
             <div id="boxL" class="boxL">
             </div>
@@ -24,52 +21,38 @@
         </div>
         
     </div>
+
+<div>
+    <div class="gridin1">
+        <div class="eer">
+        <label onclick="A()" class="cl" for="checkbox"><div id="gii" class="cll">+</div></label>
+        <input  id="checkbox" type="checkbox" name="" style="display: none;">
+        <label onclick="AA()" class="cl" for="checkbox"><div id="gii" class="cll">Max</div></label>
+        <input  id="checkbox" type="checkbox" name="" style="display: none;">
+        <label onclick="saveToFile()" class="cl" for="checkbox"><div id="gii" class="cll1">Save File</div></label>
+        <input  id="checkbox" type="checkbox" name="" style="display: none;">
+        <label class="cl" for="fileInput"><div id="gii" class="cll1">Loud File</div></label>
+        <input type="file" id="fileInput" onchange="loadFromFile()" style="display: none;">
+        </div>
+    </div>
     <div class="gridin">
-        <div>
-            <label onclick="A()" class="cl" for="checkbox"><div id="gii" class="cll">+</div></label>
-            <input  id="checkbox" type="checkbox" name="" style="display: none;">
-        </div>
-        <div>
-            <label onclick="AA()" class="cl" for="checkbox"><div id="gii" class="cll">Max</div></label>
-            <input  id="checkbox" type="checkbox" name="" style="display: none;">
-        </div>
-        <div>
-            <input class="Sl" type="number" name="" id="SL">
-        </div>
-        <div>
-            <input class="SSl" onclick="t()" type="submit" value="submit">
-        </div>
+        <input class="Sl" type="number" name="" id="SL">
+        <input class="SSl" onclick="t()" type="submit" value="submit">
     </div>
-
-    <div class="gridin1">
-        <div>
+    <div class="gridin">
             <button onclick="add(25, '1')" class="buu">25+</button>
-        </div>
-        <div>
             <button onclick="add(50, '1')" class="buu">50+</button>
-        </div>
-        <div>
             <button onclick="add(100, '1')" class="buu">100+</button>
-        </div>
-        <div>
             <button onclick="add(200, '1')" class="buu">200+</button>
-        </div>
     </div>
-
-    <div class="gridin1">
-        <div>
+    <div class="gridin">
             <button onclick="add(25, '2')" class="buu">25 -</button>
-        </div>
-        <div>
             <button onclick="add(50, '2')" class="buu">50 -</button>
-        </div>
-        <div>
             <button onclick="add(100, '2')" class="buu">100 -</button>
-        </div>
-        <div>
             <button onclick="add(200, '2')" class="buu">200 -</button>
-        </div>
     </div>
-
+</div>
+</body>
+</html>
 </body>
 </html>
