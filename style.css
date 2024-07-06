@@ -136,4 +136,7 @@ body{
         flex-direction: column;
         gap: 10px;
     }
+    body{
+        position: fixed;
+    }
 }
