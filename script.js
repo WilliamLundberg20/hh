@@ -103,7 +103,7 @@ var d = 0;
             var blob = new Blob([JSON.stringify(data)], { type: "text/plain;charset=utf-8" });
             var link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
-            link.download = "data.txt";
+            link.download = "data.lll";
             link.click();
         }
 
