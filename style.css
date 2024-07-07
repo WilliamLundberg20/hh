@@ -165,7 +165,7 @@ body{
         overflow: hidden;
         gap: 10px 20px;
         touch-action: pan-y;
-        touch-action: pan-x;
+        touch-action: pinch-zoom;
         touch-action: double-tap-zoom;
     }
     
