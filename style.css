@@ -83,6 +83,9 @@ body{
 .cl{
     display: flex;
     margin: 0px 5px;
+    &.q {
+        display: block;
+    }
 
 }
 
