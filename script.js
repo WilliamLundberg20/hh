@@ -144,3 +144,20 @@ var ngg = 1
             // Add your code for desktop view
         }
         }
+
+        function OOP() {
+            return document.fullscreenEnabled
+                || document.webkitFullscreenEnabled
+                || document.mozFullScreenEnabled
+                || document.msFullscreenEnabled;
+        }
+        
+        function DDQ() {
+            if (OOP()) {
+                document.exitFullscreen();
+            }
+
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e);
+            })
+        }
