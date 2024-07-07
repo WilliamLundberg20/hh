@@ -1,4 +1,5 @@
 var d = 0;
+var ngg = 1
         var W = 0; // Initialize W with a default value
 
         window.onload = function() {
@@ -21,7 +22,9 @@ var d = 0;
             }
 
             updateWidthAndPercentage();
-        }
+            mediaQuery.addListener(handleTabletChange);
+            handleTabletChange(mediaQuery);
+            }
 
         function t() {
             var v = document.getElementById("SL").value;
@@ -80,7 +83,7 @@ var d = 0;
             var text377 = document.getElementById("text377");
 
             var currentValue = parseInt(k.innerText);
-            var jj = (currentValue / W) * 6;
+            var jj = (currentValue / W) * ngg;
             var jj1 = (currentValue / W); // Updated to give percentage
 
             kk.style.width = jj + 'px';
@@ -121,4 +124,23 @@ var d = 0;
             };
             reader.readAsText(file);
         }
-        MediaDeviceInfo
+
+                // Define the media query
+        const mediaQuery = window.matchMedia('(max-width: 668px)');
+
+        // Function to handle changes in the media query status
+        function handleTabletChange(e) {
+        if (e.matches) {
+            // If the media query matches (i.e., the viewport is 768px or less)
+            ngg = 3
+            console.log(ngg);
+            updateWidthAndPercentage(ngg);
+            // Add your code for mobile/tablet view
+        } else {
+            // If the media query does not match (i.e., the viewport is wider than 768px)
+            ngg = 6
+            console.log(ngg);
+            updateWidthAndPercentage(ngg);
+            // Add your code for desktop view
+        }
+        }
