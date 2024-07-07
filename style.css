@@ -12,10 +12,9 @@ body{
 
 .boxS{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
     width: 100%;
 }
 
@@ -25,12 +24,11 @@ body{
     max-width: 600px;
     height: 95px;
     border-radius: 900px;
-    justify-content: start;
-    align-items: center;
     border-style: solid;
     overflow: hidden;
     background-color: rgba(127, 255, 212, 0);
     border-color: #4F4F4F;
+    border-width: 3px;
 }
 
 .boxL{
@@ -40,7 +38,8 @@ body{
     border-radius: 900px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, #E06060, #75D838);
+    background: linear-gradient(to right, #bd2525, #75D838);
+    background-size: 600px;
 }
 
 .sdd{
@@ -55,7 +54,7 @@ body{
     text-align: center;
 }
 
-.cll{
+.cll {
     display: flex;
     width: 40px;
     height: 40px;
@@ -64,18 +63,22 @@ body{
     align-items: center;
     font-size: 15px;
     background-color: rgb(238, 238, 238);
+    
+    &.k {
+        color: #3242cf;
+    }
+
+    &.L {
+        color: #38ec50;
+        font-size: 25px;
+    }
+
+    &.S {
+        color: #a85a1b;
+        width: 80px;
+    }
 }
 
-.cll1{
-    display: flex;
-    width: 80px;
-    height: 40px;
-    border-radius: 200px;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    background-color: rgb(238, 238, 238);
-}
 
 .cl{
     display: flex;
@@ -142,10 +145,11 @@ body{
     height: 43px;
     border-radius: 900px;
     border: none;
+    color: #ff3131;
 }
 
 /* Media Queries for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 668px) {
 
     body{
         display: flex;
@@ -156,8 +160,7 @@ body{
         padding: 0 40px;
         box-sizing: border-box;
         overflow: hidden;
-        gap: 70px 20px;
-        position: fixed;
+        gap: 10px 20px;
     }
     
     .boxS{
@@ -165,38 +168,37 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 5px;
         width: 100%;
     }
     
     .box{
         display: flex;
         width: 100%;
-        max-width: 600px;
-        height: 95px;
+        max-width: 300px;
+        height: 65px;
         border-radius: 900px;
-        justify-content: start;
-        align-items: center;
         border-style: solid;
         overflow: hidden;
         background-color: rgba(127, 255, 212, 0);
         border-color: #4F4F4F;
+        border-width: 3px;
     }
     
     .boxL{
         display: flex;
         width: 300px;
-        height: 95px;
+        height: 65px;
         border-radius: 900px;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(to right, #E06060, #75D838);
+        background: linear-gradient(to right, #bd2525, #75D838);
+        background-size: 300px;
     }
     
     .sdd{
         display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0px;
     }
     
     .text177{
@@ -205,7 +207,7 @@ body{
         text-align: center;
     }
     
-    .cll{
+    .cll {
         display: flex;
         width: 40px;
         height: 40px;
@@ -214,18 +216,22 @@ body{
         align-items: center;
         font-size: 15px;
         background-color: rgb(238, 238, 238);
+        
+        &.k {
+            color: #3242cf;
+        }
+    
+        &.L {
+            color: #38ec50;
+            font-size: 25px;
+        }
+    
+        &.S {
+            color: #a85a1b;
+            width: 80px;
+        }
     }
     
-    .cll1{
-        display: flex;
-        width: 80px;
-        height: 40px;
-        border-radius: 200px;
-        justify-content: center;
-        align-items: center;
-        font-size: 15px;
-        background-color: rgb(238, 238, 238);
-    }
     
     .cl{
         display: flex;
@@ -241,7 +247,7 @@ body{
     
     .Sl{
         display: flex;
-        width: 303px;
+        width: 90px;
         height: 43px;
         border-radius: 200px;
         justify-content: center;
@@ -264,23 +270,25 @@ body{
     }
     
     .gridin{
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        gap: 0px 10px;
+        grid-template-columns: auto auto;
+        gap: 80px 20px;
         padding: 0px 0px;
-        width: 250px;
+        width: 450px;
         height: 60px;
     
     }
     
     .gridin1{
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        width: 150px;
+        grid-template-columns: auto auto;
+        gap: 80px 20px;
+        padding: 0px 0px;
+        width: 450px;
         height: 60px;
     
     }
@@ -292,6 +300,7 @@ body{
         height: 43px;
         border-radius: 900px;
         border: none;
+        color: #ff3131;
     }
 
 }
